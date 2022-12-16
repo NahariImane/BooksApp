@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/second_color"
+            android:padding="15dp"
+            android:layout_marginBottom="30dp">
+
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:background="@color/white">
+
+                <!--Image view for displaying our book image-->
+                <ImageView
+                    android:id="@+id/idIVbook"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="@string/app_name"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                   />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <!--Text view for displaying book publisher-->
+                <TextView
+                    android:id="@+id/idTVpublisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Publisher"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <!--text view for displaying number of pages of book-->
+                <TextView
+                    android:id="@+id/idTVNoOfPages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:text="Number of Pages"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <!--text view for displaying book publish date-->
+                <TextView
+                    android:id="@+id/idTVPublishDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:text="Publish Date"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <!--text view for displaying book title-->
+            <TextView
+                android:id="@+id/idTVTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                android:text="title"
+                android:textStyle="bold"
+                android:textColor="@color/main_color"
+                android:textSize="22sp" />
+
+            <!--text view for displaying book subtitle-->
+            <TextView
+                android:id="@+id/idTVSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:padding="4dp"
+                android:text="subtitle"
+                android:textStyle="bold"
+                android:textColor="@color/second_color"
+                android:textSize="16sp" />
+
+            <!--text view for displaying book description-->
+            <TextView
+                android:id="@+id/idTVDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                android:text="description"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="3dp"
+                android:textSize="18sp" />
+
+                <!--button for displaying book preview-->
+                <Button
+                    android:id="@+id/idBtnPreview"
+                    android:layout_width="220dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="4dp"
+                    android:textSize="20sp"
+                    android:text="Preview"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/main_color"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/second_color"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@id/layout2"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:background="@color/white">
+
+            <!--Image view for displaying our book image-->
+            <ImageView
+                android:id="@+id/idIVbook"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:contentDescription="@string/app_name"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                />
+            <!--android:src="@drawable/book"-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/idTVBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/layout2"
+            android:padding="3dp"
+            android:text="Book Title"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/idTVpublisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVBookTitle"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/layout2"
+            android:padding="4dp"
+            android:text="Publisher"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/idTVPageCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVpublisher"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/layout2"
+            android:padding="4dp"
+            android:text="Page count"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/idTVDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVPageCount"
+            android:layout_alignParentEnd="true"
+            android:padding="4dp"
+            android:text="date"
+            android:textStyle="italic"
+            android:textColor="#DDC06A"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

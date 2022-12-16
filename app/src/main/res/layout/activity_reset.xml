@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResetActivity">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/second_color"
+        android:paddingVertical="30dp"
+        android:layout_marginBottom="48dp">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/security"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/username_reset_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/layout1"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="18dp"
+        android:background="@drawable/edittextbackgound"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:textColorHint="#4A4A4A"
+        android:textSize="22sp"
+        app:drawableLeftCompat="@drawable/ic_person" />
+
+
+    <EditText
+        android:id="@+id/password_reset"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/username_reset_text"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittextbackgound"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:hint="Type New Password"
+        android:paddingStart="15dp"
+        android:textColorHint="@color/third_color"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/repassword_reset"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/password_reset"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittextbackgound"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:hint="Retype Password"
+        android:paddingStart="15dp"
+        android:textColorHint="@color/third_color"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnconfirm"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:text="Confirm"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/repassword_reset"
+        android:backgroundTint="@color/main_color"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/second_color"
+        android:paddingTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/register"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/Username"
+            android:hint="Username"
+            android:textSize="25sp"
+            android:textColorHint="@color/third_color"
+            android:background="@drawable/edittextbackgound"
+            android:layout_marginBottom="30dp"
+            android:paddingStart="15dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:textSize="25sp"
+            android:textColorHint="@color/third_color"
+            android:background="@drawable/edittextbackgound"
+            android:layout_marginBottom="30dp"
+            android:paddingStart="15dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/third_color"
+            android:textSize="25sp"
+            android:background="@drawable/edittextbackgound"
+            android:layout_marginBottom="30dp"
+            android:paddingStart="15dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextbackgound"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/third_color"
+            android:textSize="25sp"
+            android:paddingStart="15dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:layout_marginBottom="30dp"
+            android:drawablePadding="10dp"/>
+
+        <Button
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:id="@+id/signup"
+            android:text="register"
+            android:textSize="20sp"
+            android:backgroundTint="@color/main_color"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
